@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    - map: 'M:\sites\l55.site'
+      to: /home/vagrant/l55.site
+    - map: 'M:\sites\laravel-packages'
+      to: /home/vagrant/laravel-packages
+sites:
+    - map: l55.site
+      to: /home/vagrant/l55.site/public
+databases:
+    - homestead
+name: l55-site
+hostname: l55-site

@@ -1,0 +1,23 @@
+{
+    "name": "huenisys/start",
+    "description": "starter package for Laravel 5.5",
+    "keywords": ["initialization package", "laravel"],
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "huenisys",
+            "email": "paul@huenits.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Huenisys\\Start\\":"src/"
+        }
+    }
+}
