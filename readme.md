@@ -24,14 +24,11 @@ $ ``laravel new l55.site``
 - $ ``composer require "laravel/homestead"``
 - $ ``php vendor/bin/homestead make`` or 
 $ ``vendor\\bin\\homestead make``
-- Setup the dev machine like what's shown in stub: stubs/Homestead.yaml
+- Setup the dev machine like what's shown in resources/Homestead.yaml
 - Install composer packages: $ ``composer install``
 - Install node modules: $ ``npm install``
-- Setup a database: $ ``touch database/database.sqlite``
-- Update .env to use DB_CONNECTION=sqlite, delete all other DB entries
-- Do a fresh migration: $ ``art migrate:refresh``
-- Copy class: StartSeeder: $ ``art vendor:publish --tag=start-seeder``
-- Seed it: $ ``art db:seed --class=StartSeeder``
+- Setup a database: $ ``art vendor:publish --tag=start-sqdb``
+
 
 ## Notes
 

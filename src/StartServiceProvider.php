@@ -19,10 +19,10 @@ class StartServiceProvider extends ServiceProvider
             __DIR__.'/../config/tpl.php' => config_path('tpl.php'),
         ], 'start-config');
 
-        // publishes tpl's assets [bs4, popper, etc]
+        // generates an sqlite db
         $this->publishes([
-            __DIR__.'/../resources/database' => database_path(),
-        ], 'start-seeder');
+            __DIR__.'/../database' => database_path(),
+        ], 'start-sqdb');
     }
 
     /**
@@ -41,12 +41,4 @@ class StartServiceProvider extends ServiceProvider
         });
     }
 
-    public function setTemplateGlobals()
-    {
-        $tpl_globals = Config::get('tpl');
-        foreach ($tpl_globals as $key => $value) {
-            View::share($key, $value);
-        }
-
-    }
 }
