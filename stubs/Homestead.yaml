@@ -13,6 +13,8 @@ folders:
 sites:
     - map: www.l55.site
       to: /home/vagrant/l55.site/public
+    - map: _.l55.site
+      to: /home/vagrant/l55.site/public
 databases:
     - homestead
 name: l55-site
