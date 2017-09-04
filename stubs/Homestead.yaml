@@ -11,7 +11,7 @@ folders:
     - map: 'M:\sites\laravel-packages'
       to: /home/vagrant/laravel-packages
 sites:
-    - map: l55.site
+    - map: www.l55.site
       to: /home/vagrant/l55.site/public
 databases:
     - homestead
